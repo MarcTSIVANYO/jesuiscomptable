@@ -1,0 +1,2122 @@
+/* ===========================================================================
+
+Template Name : UNIKO - Personal and Portfolio HTML5 Template;
+Author : Unicoder;
+Email: unicoder16@gmail.com
+Developed By : Agun Mondol;
+Version : 1.0.1
+Last Update : 12th June, 2017
+
+=========================================================================== */
+
+
+/*=========================================================================
+Table of CSS Content
+===========================================================================
+	1. Link CSS
+	2. Typography CSS
+		2.1. Button CSS
+		2.2. Loader CSS
+	3 Header Section CSS
+	4 Slider Section CSS
+	5 About Section CSS
+		5.1. Tab Menu CSS
+		5.2. Skill Section CSS	
+	6. Service Section CSS
+	7. Portfolio Section CSS
+	8. Team Section CSS
+	9. Testimonial Section CSS
+	10. Blog Section CSS
+	11. Princing Section CSS
+	12. Achivement Section CSS
+	13. Brand Section CSS
+	14. Contact Section CSS
+	15. Contact Info
+	16. Copy Right
+	17. Blog Page
+		17.1. Banner Section CSS
+		17.2. Blog List CSS
+		17.3. Pagination CSS
+		17.4. Sidebar CSS
+		
+	18. Single Blog
+		18.1. Blog Details CSS
+		18.2. Comments Section CSS
+		
+	19. Media Query
+		19.1. Media Query CSS
+
+=========================================================================== */
+
+
+
+
+
+
+
+/* ===========================================================================
+1. Link CSS 
+=========================================================================== */
+
+@import url('flaticon.css');
+@import url('animate.css');
+@import url('jquery.fancybox.css');
+
+
+
+
+/* ===========================================================================
+2. Typography CSS 
+=========================================================================== */
+
+
+/*-------- Import Google Fonts -------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	line-height:1.8em;
+	font-weight:400;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center top;
+	-webkit-font-smoothing: antialiased
+}
+a{
+	text-decoration:none;
+	cursor:pointer
+}
+ul, li{
+	list-style-type:none;
+	padding:0
+}
+
+a:hover,a:focus,a:visited{
+	text-decoration:none;
+	outline:none
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#333
+}
+h1{
+	font-size:64px
+}
+h2{
+	font-size:36px
+}
+h3{
+	font-size:24px
+}
+h4{
+	font-size:21px
+}
+h5{
+	font-size:18px
+}
+h6{
+	font-size:14px
+}
+img{
+	width:100%
+}
+.pragraph{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	line-height:26px
+}
+
+
+
+/* ===========================================================================
+2.1. Button CSS 
+=========================================================================== */
+
+.btn-default{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 30px;
+	display:inline-block;
+	line-height:24px;
+	text-transform:uppercase;
+	margin-top:25px
+}
+.btn-submit{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 45px;
+	display:inline-block;
+	line-height:24px;
+	text-transform:uppercase;
+	border:none
+}
+.plane{
+	margin-right:15px
+}
+
+.btn-primary{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 30px;
+	display:inline-block;
+	line-height:24px;
+	text-transform:uppercase;
+	margin-top:30px
+}
+.btn-secondary{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	display:inline-block;
+	margin-top:13px;
+	float:left
+}
+.arrow_btn {
+  display: inline-block;
+  height: 45px;
+  margin: 50px auto 0;
+  width: 45px
+}
+.down{
+	font-size:24px !important;
+	margin-top:8px
+}
+
+
+#about, 
+#skill, 
+#service, 
+#portfolio, 
+#team, 
+#testimonial, 
+#blog, 
+#princing, 
+#brand, 
+#contact, 
+#blog-post{
+	padding:80px 0;
+	width:100%
+}
+.title{
+	line-height:65px;
+	text-align:center;
+	position:relative;
+	text-transform:uppercase;
+	margin-bottom:20px
+}
+.title:after{
+	content:"";
+	width:50px;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	right:48%
+}
+.widget .title:after{
+	display:none
+}
+.title-2{
+	text-align:center;
+	position:relative;
+	text-transform:uppercase;
+	margin-bottom:20px;
+	padding:15px 0
+}
+.sub-title {
+	display: block;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 26px;
+	margin-bottom: 50px;
+	padding-left: 18%;
+	padding-right: 18%;
+	text-align: center;
+	font-weight:500
+}
+
+
+
+/* ===========================================================================
+2.2. Loader CSS 
+=========================================================================== */
+
+.loder-overlay{
+	position:fixed;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	z-index:1000
+}
+.spinner {
+  margin: 0 auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+  margin: 0 auto;
+  top:50%;
+  transform:translateY(-50%);
+  -moz-transform:translateY(-50%);
+  -ms-transform:translateY(-50%);
+  -o-transform:translateY(-50%);
+  -webkit-transform:translateY(-50%)
+}
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4)
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0)
+  }
+}
+
+
+
+/* ===========================================================================
+3. Header Section CSS 
+=========================================================================== */
+
+.nav li a{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	text-transform:uppercase
+}
+
+#header {
+  background: #fff none repeat scroll 0 0;
+  top: 0;
+  width: 100%;
+  z-index: 100
+}
+
+
+
+
+/* ===========================================================================
+4. Slider Section CSS 
+=========================================================================== */
+
+#slider{
+	padding-top:82px
+}
+.carousel-inner .item .slider-title{
+	position:relative;
+	height:94px
+}
+.carousel-inner .item .slider-title h1{
+	font-weight:bold;
+	line-height:94px;
+	width:100%;
+	text-align:center;
+	position:absolute;
+	visibility:hidden;
+	opacity:0;
+	transform:scale(1) translate3d(0px, -30px, 0px);
+	-moz-transform:scale(1) translate3d(0px, -30px, 0px);
+	-o-transform:scale(1) translate3d(0px, -30px, 0px);
+	-webkit-transform:scale(1) translate3d(0px, -30px, 0px);
+	transition:all 1s ease;
+	-moz-transition:all 1s ease;
+	-ms-transition:all 1s ease;
+	-o-transition:all 1s ease;
+	-webkit-transition:all 1s ease
+}
+.carousel-inner .item.active .slider-title h1{
+	opacity:1;
+	transform:scale(1) translate3d(0px, 0px, 0px);
+	-moz-transform:scale(1) translate3d(0px, 0px, 0px);
+	-ms-transform:scale(1) translate3d(0px, 0px, 0px);
+	-o-transform:scale(1) translate3d(0px, 0px, 0px);
+	-webkit-transform:scale(1) translate3d(0px, 0px, 0px);
+	visibility:visible;
+	top:0
+}
+.carousel-inner .item .slider-sub-title{
+	font-size:18px;
+	font-weight:normal;
+	text-transform:uppercase;
+	line-height:30px;
+	visibility:hidden;
+	opacity:0;
+	transition:all 2s ease;
+	-moz-transition:all 2s ease;
+	-ms-transition:all 2s ease;
+	-o-transition:all 2s ease;
+	-webkit-transition:all 2s ease;
+	transform:scale(.8) translate3d(0px, 0px, 0px);
+	-moz-transform:scale(.8) translate3d(0px, 0px, 0px);
+	-ms-transform:scale(.8) translate3d(0px, 0px, 0px);
+	-o-transform:scale(.8) translate3d(0px, 0px, 0px);
+	-webkit-transform:scale(.8) translate3d(0px, 0px, 0px)
+}
+.carousel-inner .item.active .slider-sub-title{
+	opacity:1;
+	visibility:visible;
+	transform:scale(1) translate3d(0px, 0px, 0px);
+	-moz-transform:scale(1) translate3d(0px, 0px, 0px);
+	-ms-transform:scale(1) translate3d(0px, 0px, 0px);
+	-o-transform:scale(1) translate3d(0px, 0px, 0px);
+	-webkit-transform:scale(1) translate3d(0px, 0px, 0px)
+}
+
+.carousel-inner .item .btn-hire{
+	visibility:hidden;
+	opacity:0;
+	transition:all 1.5s ease;
+	-moz-transition:all 1.5s ease;
+	-ms-transition:all 1.5s ease;
+	-o-transition:all 1.5s ease;
+	-webkit-transition:all 1.5s ease;
+	transform:scale(1) translate3d(0px, 30px, 0px);
+	-moz-transform:scale(1) translate3d(0px, 30px, 0px);
+	-ms-transform:scale(1) translate3d(0px, 30px, 0px);
+	-o-transform:scale(1) translate3d(0px, 30px, 0px);
+	-webkit-transform:scale(1) translate3d(0px, 30px, 0px)
+}
+.carousel-inner .item.active .btn-hire{
+	opacity:1;
+	visibility:visible;
+	transform:scale(1) translate3d(0px, 0px, 0px);
+	-moz-transform:scale(1) translate3d(0px, 0px, 0px);
+	-ms-transform:scale(1) translate3d(0px, 0px, 0px);
+	-o-transform:scale(1) translate3d(0px, 0px, 0px);
+	-webkit-transform:scale(1) translate3d(0px, 0px, 0px)
+}
+.carousel-inner .item .arrow_btn{
+	visibility:hidden;
+	opacity:0;
+	transition:opacity 3s ease;
+	-moz-transition:opacity 3s ease;
+	-ms-transition:opacity 3s ease;
+	-o-transition:opacity 3s ease;
+	-webkit-transition:opacity 3s ease
+}
+.carousel-inner .item.active .arrow_btn{
+	opacity:1;
+	visibility:visible
+}
+
+
+
+
+/* ===========================================================================
+5. About Section CSS 
+=========================================================================== */
+
+.profile{
+	position:relative
+}
+.profile img{
+	height:100%
+}
+.profile-social{
+	display: table;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 20px;
+	width:100%
+}
+.social_icon{
+	display: table;
+	margin: 0 auto
+}
+.social_icon li{
+	width:45px;
+	height:45px;
+	font-size:16px;
+	border-radius:45px;
+	float:left;
+	margin:0 5px;
+	cursor:pointer;
+	line-height:45px;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.social_icon li a {
+  display: block;
+  text-align: center;
+  transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.my_self {
+  display: inline-block;
+  overflow: hidden;
+  padding: 25px 30px;
+  width: 100%
+}
+.self-title{
+	font-size:26px;
+	font-weight:bold
+}
+.self-tab-active{
+	font-size:21px;
+	font-weight:bold;
+	line-height:30px;
+	text-transform:uppercase
+}
+
+/* ===========================================================================
+5.1. Tab Menu CSS 
+=========================================================================== */
+
+.nav-tabs > li{
+	margin-top:55px
+}
+.nav-tabs > li > a{
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	padding:inherit
+}
+.tab-1>li{
+	float:none !important;
+	margin-left:auto;
+	margin-right:auto;
+	display:table;
+	text-align:center;
+	width:50px;
+	height:50px;
+	position:relative
+}
+.tab-1 > li > a{
+	padding:6px;
+	margin:0 auto;
+	margin-top:8px
+}
+.tab-1 > li.active > a{
+	padding:10px;
+	width: 50px;
+	height: 50px;
+	font-size:18px;
+	margin-top:0
+}
+.tab-1{
+	position:relative
+}
+.tab-1:after{
+	content:"";
+	position:absolute
+}
+.item_title {
+  font-size: 11px;
+  font-weight: 400;
+  left: 50%;
+  padding: 5px;
+  position: absolute;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: -moz-max-content;
+  z-index: 99
+}
+.item_title{
+	top: -120%;
+	visibility:hidden;
+	opacity:0;
+	background: #fff;
+  	color: #5a5a5a;
+	transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-ms-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	-webkit-transition:all .3s ease
+}
+.nav-tabs > li > a:hover > .item_title{
+	top: -100%;
+	visibility:visible;
+	opacity:1
+}
+.nav-tabs > li.active > a > .item_title{
+	display:none
+}
+.item_title:after{
+	position:absolute;
+	content:"";
+	width:1px;
+	hanging-punctuation:1px;
+	border-width:5px;
+	border-color: #FFF transparent transparent transparent;
+	border-style:solid;
+	bottom:-10px;
+	left:50%;
+	transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%)
+}
+.about-tab1 {
+  display: inline-block;
+  padding-top: 30px
+}
+
+.tab-1 > li.active > a {
+	-webkit-animation: cssAnimation 1s 1 ease;
+	-moz-animation: cssAnimation 1s 1 ease;
+	-o-animation: cssAnimation 1s 1 ease
+	}
+	@-webkit-keyframes cssAnimation {
+	from { -webkit-transform: rotate(0deg) scale(0.90) skew(1deg) translate(0px) }
+	to { -webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px) }
+	}
+	@-moz-keyframes cssAnimation {
+	from { -moz-transform: rotate(0deg) scale(0.90) skew(1deg) translate(0px) }
+	to { -moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px) }
+	}
+	@-o-keyframes cssAnimation {
+	from { -o-transform: rotate(0deg) scale(0.90) skew(1deg) translate(0px) }
+	to { -o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px) }
+	}
+
+
+
+/* ===========================================================================
+5.2. Skill Section CSS 
+=========================================================================== */
+
+.skills{
+	display:inline-block;
+	width:100%
+}
+.col_bar{
+	width:100%;
+	overflow:hidden;
+	height:400px;
+	padding-top:30px;
+	position:relative
+}
+.skill_percent > div {
+  display: table;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  top: -30px;
+  width: 100%
+}
+.skill_percent{
+	width:40%;
+	margin:0 auto;
+	position:absolute;
+	left:30%;
+	bottom:-30px;
+	transition: transform 1.3s ease;
+	-moz-transition: transform 1.3s ease;
+	-ms-transition: transform 1.3s ease;
+	-o-transition: transform 1.3s ease;
+	-webkit-transition: transform 1.3s ease;
+	transform:translateY(70%);
+	-moz-transform:translateY(70%);
+	-ms-transform:translateY(70%);
+	-o-transform:translateY(70%);
+	-webkit-transform:translateY(70%)
+}
+.animate.skill_percent{
+	transform:translateY(70%);
+	-moz-transform:translateY(70%);
+	-ms-transform:translateY(70%);
+	-o-transform:translateY(70%);
+	-webkit-transform:translateY(70%)
+}
+.skill_percent{
+	transform:translateY(0%);
+	-moz-transform:translateY(0%);
+	-ms-transform:translateY(0%);
+	-o-transform:translateY(0%);
+	-webkit-transform:translateY(0%)
+}
+.skill_per > h6{
+	font-size:14px;
+	font-weight:bold;
+	text-align:center
+}
+.skill_per > h5{
+	font-family: 'Lato', sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	padding-top:15px
+}
+.skill_para p{
+	font-family: 'Open Sans', sans-serif;
+	text-align:center;
+	margin-top:30px
+}
+.skill_para {
+  padding: 0 18%;
+}
+
+
+
+/* ===========================================================================
+6. Service Section CSS 
+=========================================================================== */
+
+#service{
+	background:url(../img/bacground/service_bg.png) fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center
+}
+.srv-box i{
+	font-size:40px
+}
+.srv-box{
+	text-align:center;
+	padding:70px 20px
+}
+.srv-title{
+	margin-top:40px
+}
+.srv-box p{
+	font-family: 'Open Sans', sans-serif;
+	margin-top:35px
+}
+.service-item{
+	padding:15px 0
+}
+
+
+
+
+/* ===========================================================================
+7. Portfolio Section CSS 
+=========================================================================== */
+
+.portfolio_area{
+	text-align:center
+}
+.gallery-section{
+	position:relative
+}
+
+.default-portfolio-item{
+	position:relative
+}
+
+.mixed-gallery-section .column,
+.gallery-section .column{
+	margin-bottom:30px
+}
+
+.default-portfolio-item .inner-box{
+	position:relative;
+	-webkit-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease	
+}
+
+.default-portfolio-item .image-box img{
+	display:block;
+	width:100%
+}
+
+.default-portfolio-item .overlay-box{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	display:block;
+	border-radius:5px;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition:all 400ms ease-out;
+	-ms-transition:all 400ms ease-out;
+	-o-transition:all 400ms ease-out;
+	-moz-transition:all 400ms ease-out;
+	transition:all 400ms ease-out
+}
+
+.default-portfolio-item:hover .overlay-box{
+	opacity:1;
+	visibility:visible
+}
+
+.default-portfolio-item .overlay-box .inner-content{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	padding:20px;
+	display:table;
+	vertical-align:middle;
+	text-align:center
+}
+
+.default-portfolio-item .overlay-box .content{
+	display:table-cell;
+	vertical-align:middle
+}
+
+.default-portfolio-item .overlay-box h5 {
+  bottom: -50px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.8em;
+  max-width: 300px;
+  position: absolute;
+  text-transform: uppercase;
+  font-family:'lato',sans-serif;
+  text-align:left;
+  transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  -ms-transition:all 0.3s ease;
+  -o-transition:all 0.3s ease;
+  -webkit-transition:all 0.3s ease
+}
+.default-portfolio-item .overlay-box:hover h5{
+	bottom:10px
+}
+
+.default-portfolio-item .overlay-box h5 span {
+  display: table;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px
+}
+
+.default-portfolio-item .overlay-box .arrow {
+  display: block;
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  position: relative;
+  width: 30px
+}
+
+.filter-list .mix{
+	display:none
+}
+
+.gallery-section .filters{
+	position:relative;
+	text-align:center;
+	margin-bottom:50px
+}
+
+.gallery-section .filter-btns{
+	position:relative;
+	text-align:center;
+	font-family:'lato',sans-serif
+}
+
+.gallery-section .filter-btns li{
+	position:relative;
+	display:inline-block;
+	padding:10px 25px;
+	line-height:24px;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:bold;
+	margin:5px;
+	transition:all 300ms ease;
+	-webkit-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease
+}
+
+.inner-content .content h6{
+	margin-bottom:25px
+}
+
+
+
+
+/* ===========================================================================
+8. Team Section CSS 
+=========================================================================== */
+
+#team{
+	background:url(../img/bacground/team-bg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center
+}
+.member{
+	text-align:center;
+	width:100%;
+	display:inline-block;
+	padding:20px;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.member:hover{
+	opacity:1
+}
+.member p{
+	color:#FFF
+}
+.member_pic, .member_pic img{
+	width:280px;
+	height:280px;
+	border-radius:280px;
+	margin:0 auto;
+	margin-bottom:20px
+}
+.member h3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	font-size:24px;
+	text-transform:uppercase
+}
+.member h6{
+	font-family: 'lato', sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	text-transform:uppercase
+}
+.book_full{
+	margin:0 auto;
+	display:inline-block;
+	margin-top:15px
+}
+.book{
+	width:45px;
+	height:45px;
+	border-radius:45px;
+	padding:12px 0;
+	float:left;
+	margin:0 5px
+}
+.bk{
+	font-size:18px !important
+}
+
+.members_slide .owl-nav{
+	top:50%;
+	width:100%;
+	transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%)
+}
+.members_slide.owl-theme .owl-controls .owl-nav [class*="owl-"]{
+	font-size:36px;
+	color:#FFF
+}
+.members_slide.owl-carousel .owl-controls .owl-nav .owl-prev{
+	float:left;
+	margin-left:-50px
+}
+
+.members_slide.owl-carousel .owl-controls .owl-nav .owl-next{
+	float:right;
+	margin-right:-50px
+}
+
+
+
+
+/* ===========================================================================
+9. Testimonial Section CSS 
+=========================================================================== */
+
+#testimonial p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	margin-top:38px
+}
+.testimonial_area, .testimonials-carousel{
+	text-align:center;
+	padding-bottom:50px;
+	padding-left:7%;
+	padding-right:7%
+}
+.testimonials-carousel.owl-theme .owl-controls .owl-nav [class*="owl-"]{
+	width:40px;
+	height:40px;
+	text-align:center;
+	color:#FFF;
+	background:#5a5a5a;
+	border-radius:50%;
+	margin:0 5px;
+	line-height:38px
+}
+.testimonials-carousel.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover{
+	background:#f7465b;
+	color:#FFF
+}
+.testimonial_area .owl-nav{
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%)
+}
+.ellipse{
+	width:80px;
+	height:80px;
+	border-radius:80px;
+	margin:0 auto;
+	margin-top:45px;
+	padding:25px
+}
+.quote{
+	font-size:28px !important
+}
+.line_tool{
+	width:500px;
+	height:1px;
+	margin:0 auto;
+	margin-top:25px
+}
+.testimonial_area h5{
+	font-family: 'lato', sans-serif;
+	font-weight:bold;
+	font-size:16px;
+	line-height:24px;
+	margin-top:20px
+}
+.star{
+	margin-top:15px
+}
+.star i{
+	margin:0 3px;
+	font-size:12px
+}
+.eighten{
+	font-size:18px !important
+}
+.test_arrow{
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	float:left;
+	margin:0 5px;
+	padding:2px
+}
+.test_arrow i{
+	font-size:14px
+}
+.test_full{
+	display:inline-block;
+	margin-top:30px
+}
+
+
+
+/* ===========================================================================
+10. Blog Section CSS 
+=========================================================================== */
+
+#blog{
+	background:url(../img/bacground/blog_bg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center
+}
+.blog_grid{
+	width:100%;
+	display:inline-block;
+	padding-bottom:15px
+}
+.blog_text{
+	padding:0 15px
+}
+.blog_grid h4{
+	font-family: 'lato', sans-serif;
+	font-weight:bold;
+	font-size:16px;
+	text-transform:uppercase;
+	margin-top:50px;
+	margin-bottom:0;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.blog_grid h6{
+	font-family: 'lato', sans-serif;
+	font-weight:normal;
+	font-size:12px;
+	text-align:left;
+	line-height:24px
+}
+.blog_grid p{
+	font-family: 'Open Sans', sans-serif;
+	margin-top:15px;
+	line-height:26px
+}
+.blog_line{
+	width:100%;
+	height:1px;
+	margin-top:20px
+}
+.blog_img{
+	position:relative
+}
+.post-img{
+	cursor:pointer;
+	overflow:hidden
+}
+.blog_grid .post-img img, .blog-list .post-image img{
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.blog_grid:hover .post-img img, .blog-list:hover .post-image img{
+	-webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+     transform:scale(1.1);
+}
+.overlay h1{
+	font-family: 'lato', sans-serif;
+	font-size:60px;
+	font-weight:normal;
+	margin:0;
+	position:absolute;
+	transform: translateX(-50%) translateY(-50%);
+	top:50%;
+	left:50%
+}
+.comment{
+	font-size:14px !important;
+	display:inline-block;
+	float:left;
+	margin-top:14px;
+	line-height:25px
+}
+.no_com{
+	display:inline-block;
+	float:left;
+	margin-left:10px !important;
+	margin-top:15px !important
+}
+.blog_img img{
+	width:100%
+}
+.see_all{
+	text-align:center;
+	margin-top:30px
+}
+
+
+
+/* ===========================================================================
+11. Princing Section CSS 
+=========================================================================== */
+
+.plan{
+	width:100%;
+	display:inline-block;
+	text-align:center;
+	padding-bottom:30px
+}
+.plan_head{
+	display:inline-block;
+	width:100%;
+	padding:15px 0;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.plan h5{
+	font-weight:bold;
+	font-size:18px;
+	text-transform:uppercase
+}
+.plan h3 {
+	font-size: 50px;
+	display: inline-block;
+	margin-top:10px;
+	font-weight:bold
+}
+.plan i{
+	font-size:22px;
+	display:inline-block;
+	float:left;
+	margin-top:8px
+}
+.plan_ul{
+	padding:0;
+	margin-top:25px
+}
+.plan_ul li{
+	font-family: 'Open Sans', sans-serif;
+	list-style-type:none;
+	font-size:14px;
+	margin:10px auto
+}
+
+
+
+
+/* ===========================================================================
+12. Achivement Section CSS 
+=========================================================================== */
+.achivement{
+	padding:15px 0
+}
+#experience{
+	padding:80px 0
+}
+.experience_area{
+	width:300px;
+	height:300px;
+	border-radius:300px;
+	margin:0 auto;
+	border:10px solid #fff
+}
+.experience_area h1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	font-size:100px;
+	text-align:center;
+	margin-top:50px
+}
+.experience_area h5{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	font-size:24px;
+	text-align:center;
+	text-transform:uppercase
+}
+
+
+
+
+/* ===========================================================================
+13. Brand Section CSS 
+=========================================================================== */
+
+.brand_area ul li{
+	float:left
+}
+.brand_area ul li a{
+	display:block;
+	padding:40px
+}
+.owl-dots{
+	display:none !important
+}
+.brand_area .owl-carousel .owl-item{
+	padding:0 15px
+}
+.owl-nav{
+	position:absolute;
+	z-index:-99
+}
+
+.brand_area .owl-nav{
+	top:50%;
+	width:100%;
+	transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%)
+}
+.brand_area .owl-theme .owl-controls .owl-nav [class*="owl-"]{
+	font-size:36px
+}
+.brand_area .owl-carousel .owl-controls .owl-nav .owl-prev{
+	float:left;
+	margin-left:-50px
+}
+
+.brand_area .owl-carousel .owl-controls .owl-nav .owl-next{
+	float:right;
+	margin-right:-50px
+}
+
+
+
+/* ===========================================================================
+14. Contact Section CSS 
+=========================================================================== */
+
+#contact .contact_area .form input{
+	background:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	width:100%;
+	padding:10px 0px;
+	margin-top:30px
+}
+#contact .contact_area .form textarea{
+	background:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	width:100%;
+	margin-top:30px;
+	resize:none
+}
+.form{
+	width:100%;
+	display:inline-block
+}
+.form_button{
+	margin-top:30px;
+	text-align:center
+}
+
+#contact{
+	background:url(../img/bacground/contact_bg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	padding-bottom:30px
+}
+
+
+
+/* ===========================================================================
+15. Adress Section CSS 
+=========================================================================== */
+
+.adress{
+	display:table;
+	padding:15px 0
+}
+.contact-info{
+	margin-top:100px
+}
+.adress i{
+	font-size:15px;
+	width:35px;
+	height:35px;
+	padding:10px;
+	display:inline-block;
+	float:left;
+	cursor:pointer;
+	text-align:center;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.adress span {
+  display: table-cell;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 16px;
+  padding-left: 15px;
+  text-align: left;
+  vertical-align: middle
+}
+
+
+
+
+
+/* ===========================================================================
+16. Copy Right Section 
+=========================================================================== */
+
+.coppyright_area{
+	text-align:center;
+	width:100%;
+	display:table;
+	padding:10px 0
+}
+.coppyright_area span{
+	font-size:12px;
+	line-height:30px;
+	text-align:center
+}
+
+
+
+/* ===========================================================================
+17. Blog Page 
+=========================================================================== */
+
+/* ===========================================================================
+17.1 Banner Section CSS 
+=========================================================================== */
+
+#banar{
+	background:url(../img/banar/banar.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:80px 0;
+	text-align:center
+}
+.banar-sub-title{
+	font-family: 'Open Sans', sans-serif;
+	font-size:13px;
+	font-weight:normal;
+	margin-top:15px;
+	text-transform:uppercase
+}
+.banar_area{
+	display:inline-block
+}
+.banar-sub-title span{
+	margin:0 5px
+}
+.banar-sub-title span a{
+	color:#f7465b
+}
+.section-title {
+	position:relative;
+	padding:15px 0
+}
+.section-title:after{
+	content:"";
+	position:absolute;
+	width:50%;
+	height:3px;
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	-webkit-transform:translateX(-50%)
+}
+
+
+
+
+/* ===========================================================================
+17.2 Blog List CSS 
+=========================================================================== */
+
+.blog-list{
+	width:100%;
+	margin-bottom:50px
+}
+.post-image{
+	position:relative;
+	overflow:hidden
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	visibility:hiddenl
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.blog-list:hover .overlay{
+	visibility:visible;
+	opacity:1
+}
+.blog_grid:hover .overlay{
+	visibility:visible;
+	opacity:0.7
+}
+.post-content{
+	width:100%;
+	margin-top:30px;
+	display:inline-block;
+	position:relative
+}
+.blog-list .post-time {
+	bottom: inherit;
+	left: 0;
+	position: absolute;
+	top: 0
+}
+.post-time{
+	position:absolute;
+	background:#FFF;
+	left:15px;
+	bottom:-35px;
+	width:80px
+}
+.date-year{
+	width:70px;
+	text-align:center;
+	display:inline-block;
+	float:left
+}
+.post-date{
+	padding:5px 10px;
+	width:100%;
+	text-align:center
+}
+.post-date span{
+	display:table;
+	width:100%;
+	text-align:center;
+	color:#FFF;
+	font-family: 'lato', sans-serif
+}
+.post-date .date{
+	font-size:21px;
+	font-weight:bold
+}
+.post-date .month{
+	font-size:12px
+}
+.post-year{
+	text-align:center;
+	font-family: 'lato', sans-serif;
+	width:100%;
+	padding:5px 10px;
+	font-weight:bold;
+	font-size:17px
+}
+.post-text{
+	width:90%;
+	float:right;
+	padding-left:15px
+}
+.post-text h5{
+	font-family: 'lato', sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	margin:0;
+	text-transform:uppercase;
+	margin-bottom:5px
+}
+.post-text .admin{
+	font-family: 'lato', sans-serif;
+	font-size:13px;
+	font-weight:normal;
+	text-align:left;
+	margin-left: -10px;
+    margin-right: -10px;
+	color:#aaa
+}
+.post-text .admin span{
+	padding:0 10px
+}
+.post-text .admin article{
+	display:inline-block;
+	margin-left:10px
+}
+.post-text p, blockquote{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 15px;
+	line-height: 26px
+}
+
+blockquote{
+	font-size:15px;
+}
+
+
+/* ===========================================================================
+17.3 Pagination CSS 
+=========================================================================== */
+
+.pagenation{
+	display:table;
+	margin:0 auto;
+	margin-top:30px
+}
+.pagenation ul li{
+	width: 40px;
+	height: 40px;
+	padding: 5px 15px;
+	float: left;
+	margin: 0 7.5px;
+	cursor: pointer
+}
+.pagenation ul li a span{
+	font-size:18px;
+	margin-top:0
+}
+.pagenation ul li a {
+	font-size:14px;
+	font-weight:normal;
+	padding:7px 0
+}
+
+
+
+
+	
+/* ===========================================================================
+17.4 Sidebar CSS 
+=========================================================================== */
+
+.search{
+	width:100%;
+	height:40px;
+	padding:0;
+	margin:0
+}
+.search1{
+	width:100%;
+	height:40px
+}
+.search2{
+	width:100% !important;
+	height:40px;
+	border-radius:0
+}
+.category{
+	width:100%
+}
+.widget .title {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 45px;
+	margin-bottom: 15px;
+	margin-top: 50px;
+	position: relative;
+	text-align: left
+}
+.widget .title::before {
+	bottom: 0;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 90px
+}
+.sidebar > ul > li{
+	margin-top:10px
+}
+.archive ul li a span, .category ul li a span{
+	margin-right:10px
+}
+.category ul li, .archive ul li{
+	padding:5px 0
+}
+.category ul li a, .archive ul li a{
+	font-family: 'Lato', sans-serif;
+	color:#5a5a5a;
+	font-size:14px;
+	display:inline-block;
+	color:#2a2a2a;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.recent-post{
+	width:100%;
+	display:inline-block
+}
+.recent-post ul li {
+	display: table;
+	padding: 10px 0;
+	width: 100%
+}
+.recent-post ul li img{
+	width:70px;
+	height:70px;
+	float:left;
+	margin-right:15px
+}
+.recent-post ul li a {
+	text-transform:initial
+}
+.recent-post h5, .recent-post h6, .recent-comments ul li h5, .recent-comments ul li h6{
+	font-family: 'lato', sans-serif;
+	text-align:left;
+	font-size:16px;
+	line-height:20px;
+	text-transform:capitalize;
+	font-weight:bold;
+	margin-top:0;
+	margin-bottom:5px
+}
+.recent-comments ul li, .recent-comments ul li {
+    display: table;
+    padding: 10px 0;
+    width: 100%
+}
+.recent-post span, .recent-comments ul li span{
+	font-family: 'lato', sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left
+}
+.instagramphoto{
+	width:100%;
+	height:300px
+}
+.instagramphoto ul{
+	padding:0
+}
+.instagramphoto ul li{
+	list-style-type:none;
+	width:31%;
+	float:left;
+	margin:3px
+}
+.instagramphoto ul li img{
+	filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	opacity:0.7;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.instagramphoto ul li img:hover{
+	opacity:1;
+	filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-webkit-filter: grayscale(0)
+}
+
+
+/* ===========================================================================
+18. Single Blog
+=========================================================================== */
+
+/* ===========================================================================
+18.1 Blog Details
+=========================================================================== */
+
+blockquote{
+	font-style:italic;
+	color:#2d2d2d !important;
+	margin-left:45px;
+	padding:10px 20px
+}
+.share-post{
+	width:100%;
+	margin-top:45px
+}
+.share-text{
+	display:inline-block;
+	float:left;
+	font-weight:bold;
+	font-size:16px;
+	text-transform:uppercase;
+	line-height:45px;
+	margin-right:15px
+}
+.member-social{
+	display:inline-block
+}
+.member-social ul li {
+	border-radius: 45px;
+	cursor: pointer;
+	float: left;
+	height: 45px;
+	margin: 0 5px;
+	width: 45px;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease
+}
+.member-social ul li a {
+  display: block;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center
+}
+.tags{
+	width:100%;
+	display:inline-block;
+	padding-top:10px;
+	padding-bottom:5px;
+	margin-top:45px
+}
+.tag-text{
+	display:inline-block;
+	float:left;
+	margin-top:1px;
+	margin-right:15px
+}
+.tag-text > span{
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:16px
+}
+.tag-value{
+	display:inline-block
+}
+.tag-value-no{
+	display:inline-block;
+	margin-bottom:0
+}
+.tag-value ul li{
+	float:left
+}
+.tag-value ul li a{
+	font-size:12px;
+	text-transform:uppercase;
+	padding:0 10px
+}
+.author-content h6{
+	font-family: 'lato', sans-serif
+}
+.author-content span {
+  color: #aaa
+}
+.tag-value ul li:last-child a{
+	border-right:none
+}
+.author{
+	width:100%;
+	margin-top:45px
+}
+.author-img img{
+	width:50px;
+	height:50px;
+	border-radius:50px;
+	float:left
+}
+.author-content{
+	display:inline-block;
+	width:90%;
+	padding-left:30px
+}
+
+
+
+
+
+/* ===========================================================================
+18.2 Comments Section CSS 
+=========================================================================== */
+.all-coment{
+	width:100%;
+	display:inline-block
+}
+.all-coment h3{
+	font-size:24px;
+	font-weight:bold;
+	text-transform:uppercase
+}
+.coment-content{
+	width:90%;
+	display:inline-block
+}
+.coment-content h5{
+	font-family: 'lato', sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:capitalize;
+	margin:0
+}
+.coments_time{
+	font-family: 'lato', sans-serif;
+	font-size:13px;
+	font-style:italic;
+	text-align:left;
+	padding:10px 0
+}
+.replay-box{
+	padding-left:50px
+}
+.coment{
+	padding:30px 0
+}
+.coment-form input.coment-field {
+  font-size: 13px;
+  height: 45px;
+  margin: 15px 0;
+  padding: 0 15px;
+  width: 100%
+}
+.coment-form textarea {
+  font-size: 13px;
+  margin-top: 15px;
+  padding: 10px 15px;
+  resize: none;
+  width: 100%
+}
+.coment-form{
+	margin-top:30px
+}
+
+
+
+/* ===========================================================================
+19. Media Query 
+=========================================================================== */
+
+@media (min-width:768px){
+.carousel-inner .item .slider-title h1{
+	font-size:45px
+}
+.nav-tabs > li:first-child{
+	margin-top:0
+}
+}
+
+@media (min-width:1200px){
+.carousel-inner .item .slider-title h1{
+	font-size:64px
+}
+
+}
+
+@media (max-width:1200px){
+.brand_area .owl-carousel .owl-controls .owl-nav .owl-next{
+	margin-right:-15px
+}
+.brand_area .owl-carousel .owl-controls .owl-nav .owl-prev{
+	margin-left:-15px
+}
+.blog_grid h4{
+	font-size:14px
+}
+.post-text {
+  width: 87%
+}
+.member_pic, .member_pic img {
+    border-radius: 100%;
+    height: 100%;
+    margin: 0 auto 20px;
+    width: 100%
+}
+.social_icon li{
+	margin:0 2px
+}
+.members_slide.owl-theme .owl-controls{
+	display:none;
+}
+}
+
+@media (max-width:991px){
+.instagramphoto ul li{
+	width:17%
+}
+.tab-info{
+	padding-left: 15px
+}
+.sidebar{
+	padding-top:30px
+}
+.about-tab1 {
+  display: inline-block;
+  padding-top: 20px
+}
+.carousel-inner > .item > a > img, .carousel-inner > .item > img{
+	width:auto;
+	height:100vh
+}
+#slider{
+	height:100vh;
+	padding:0
+}
+.carousel-caption {
+    left: 10%;
+    padding-bottom: 30px;
+    right: 10%
+}
+.sub-title {
+	padding-left:5%;
+	padding-right:5%
+}
+.team-grid{
+	padding:15px 0
+}
+.brand_area .owl-carousel .owl-controls .owl-nav .owl-next {
+  margin-right: -5px
+}
+.brand_area .owl-carousel .owl-controls .owl-nav .owl-prev {
+  margin-left: -5px
+}
+.brand_area ul li a{
+	padding:70px
+}
+.brand_area .owl-nav{
+	display:none
+}
+.plans > div, .recent-post-grid > div{
+	padding-top:15px;
+	padding-bottom:15px
+}
+.author-content{
+	width:85%
+}
+.experience_area {
+  border-radius: 220px;
+  height: 220px;
+  width: 220px;
+}
+.experience_area h1 {
+  font-size: 60px;
+  margin-top: 40px;
+}
+.experience_area h5 {
+  font-size: 18px;
+}
+}
+
+@media (max-width:767px){
+.my_self {
+  height: auto;
+  margin-top:30px
+}
+.navbar-nav > li > a {
+  line-height: 30px
+}
+.tab-1 > li{
+	display:inline-block;
+	width:23%
+}
+.nav-tabs > li{
+	margin:20px 0
+}
+.tab-1{
+	padding-left:15px;
+	padding-right:15px;
+	width:100%
+}
+.my_self{
+	padding:27px 20px
+}
+.about-tab1{
+	padding-top:0
+}
+.self-title{
+	font-size:18px
+}
+.tab-content > .tab-pane{
+	opacity:1;
+	visibility:visible;
+	display:none
+}
+.tab-content > .tab-pane.active{
+	display:block;
+	position:static
+}
+.tab-info {
+  padding: 0
+}
+
+.member_pic, .member_pic img{
+	width:100%;
+	height:100%;
+	border-radius:100%
+}
+.carousel-caption{
+	padding-bottom:0;
+	padding-top:50px
+}
+.carousel-inner .item .slider-title h1{
+	font-size:18px;
+	line-height:normal
+}
+.carousel-inner .item .slider-sub-title{
+	font-size:12px
+}
+.carousel-inner .item .slider-title {
+  height: 40px
+}
+.sub-title{
+	font-size:15px
+}
+.post-text > h4{
+	font-size:18px
+}
+.sp-text{
+	margin-left:20px
+}
+.post-text{
+	width:85%
+}
+.sidebar {
+    padding: 50px 0;
+}
+}
+@media (max-width:480px){
+.post-time{
+	width:100px
+}
+.post-text{
+	margin-top:120px;
+	padding-left:0;
+	width:100%
+}
+.author-content {
+  margin-top: 15px;
+  width: 100%;
+  padding-left:0
+}
+.coment-content {
+  display: inline-block;
+  margin-top: 15px;
+  padding-left: 0;
+  width: 100%
+}
+.coment-box2 {
+  padding-left: 30px
+}
+}
